@@ -14,6 +14,7 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("ContentComponent loaded");
   }
 
   radioChecked(event: any){

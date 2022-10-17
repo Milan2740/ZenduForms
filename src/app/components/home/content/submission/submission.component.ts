@@ -10,6 +10,7 @@ export class SubmissionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("SubmissionComponent loaded");
   }
 
 }

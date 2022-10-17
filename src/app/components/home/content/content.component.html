@@ -46,10 +46,10 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col text-end">
                                 <div class="filters form-group btn-group btn-group-toggle" data-toggle="buttons">                
-                                    <label class="btn btn-primary" [ngClass]="{'active': checkedValue == 'map'}">
+                                    <label class="btn btn-primary" [ngClass]="{'active': checkedValue === 'map'}">
                                         <input type="radio" name="options" id="option1" autocomplete="off" checked (click)="radioChecked('map')"> Map
                                     </label>
-                                    <label class="btn btn-secondary" [ngClass]="{'active': checkedValue == 'list'}">
+                                    <label class="btn btn-secondary" [ngClass]="{'active': checkedValue === 'list'}">
                                         <input type="radio" name="options" id="option2" autocomplete="off" (click)="radioChecked('list')"> List
                                     </label>
                                 </div>

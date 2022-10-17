@@ -1,0 +1,102 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  background: #2188D9;
+  height: 72px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10.40%;
+  /* width: 82.35%; */
+  /* height: 72px; */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logoText {
+  margin: auto 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.center-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: auto;
+}
+
+.active-menu {
+  background: #1773BB;
+}
+
+.menu-item1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 8px;  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  float: left;
+  height: 72px;
+  
+}
+
+.menu-icon {
+  writing-mode: vertical-lr;
+}
+
+.item-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: auto;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 6.65%;
+  height: 72px;
+}
+
+.right-menu-icon{
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,66 @@
+.submission-box {
+    border: 1px solid #ced4da;
+    padding: 16px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.sub-heading {
+    font-size: large;
+    font-weight: 700;
+}
+
+.fromSub {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #060C1B;
+}
+
+.fromSub span {
+    font-weight: 500;
+    color: #B8B9BC;
+}
+
+#dueDate {
+    color: #FF3D00;
+}
+
+.submission-status-incomplete {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    background: rgba(255, 61, 0, 0.1);
+    border: 1px solid #FF3D00;
+    border-radius: 4px;
+    color: #FF3D00;
+}
+
+.submission-status-low_risk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+    position: absolute;
+    right: 16px;
+    top: 15px;
+    background: #D7E5DA;
+    border: 1px solid #53D86A;
+    border-radius: 4px;
+}
+
+.img1 {
+    writing-mode: vertical-lr;
+}

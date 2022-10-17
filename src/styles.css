@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css") ; 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input, select {
+    border: 1px solid #B8B9BC !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 2.8rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+

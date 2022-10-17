@@ -1,0 +1,91 @@
+<div class="content-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="content-title">
+                    <h3 class="mb-32">Submissions</h3>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="content-data mb-32">
+                    <form class="form-inline">
+                        <div class="row filter-list">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 filter-col">
+                                <div class="filters position-relative form-group has-search has-search" id="searchBox">
+                                    <span class="search-icon form-control-feedback"></span>
+                                    <input class="form-control subSearch" type="search" placeholder="Search..." aria-label="Search...">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
+                                <div id="formSelect" class="filters form-group">
+                                    <select class="dropdown">
+                                        <option>Select Form </option>
+                                        <option>Option One </option>
+                                        <option>Option Two </option>
+                                        <option>Option Three </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
+                                <div class="filters form-group">
+                                    <select class="dropdown">
+                                        <option>Select Status </option>
+                                        <option>Option One </option>
+                                        <option>Option Two </option>
+                                        <option>Option Three </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
+                                <div class="filters position-relative form-group date">
+                                    <!-- <span>
+                                        <img src="../../../../assets/images/Calendar.png" alt="calendar" />
+                                    </span> -->
+                                    <input type="date" id="birthday" name="birthday" id="dateFilter">
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
+                                <div class="filters form-group btn-group btn-group-toggle" data-toggle="buttons">                
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Map
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> List
+                                    </label>
+                                </div>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row submission-data">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 submission-cols">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-forms" *ngFor="let submission of submissions">
+                                <app-submission></app-submission>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 submission-cols">
+                        <div class="map">
+                            <agm-map [latitude]="lat" [longitude]="lng">
+                                <agm-overlay [latitude]="lat" [longitude]="lng">
+                                    <div class="locationMark">
+                                        <img class="img1" src="assets/images/location-mark.png" alt="location">
+                                        <img class="img2" src="assets/images/location-mark2.png" alt="location">
+                                    </div>
+                                </agm-overlay>
+                
+                            </agm-map>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="content-main">
+    <div class="map-data">
+    </div>
+</div> -->

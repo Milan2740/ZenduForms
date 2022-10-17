@@ -44,16 +44,19 @@
                                     <input type="date" id="birthday" name="birthday" id="dateFilter">
                                 </div>
                             </div>
-                            <!-- <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col text-end">
                                 <div class="filters form-group btn-group btn-group-toggle" data-toggle="buttons">                
-                                    <label class="btn btn-primary active">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Map
+                                    <label class="btn btn-primary" [ngClass]="{'active': checkedValue == 'map'}">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked (click)="radioChecked('map')"> Map
                                     </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option2" autocomplete="off"> List
+                                    <label class="btn btn-secondary" [ngClass]="{'active': checkedValue == 'list'}">
+                                        <input type="radio" name="options" id="option2" autocomplete="off" (click)="radioChecked('list')"> List
                                     </label>
                                 </div>
-                            </div> -->
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-1 col-xl-1 filter-col text-end">
+                                <a href="javascript:void(0)" class="export-link"><img src="assets/images/export.png" alt=""></a>
+                            </div>
                         </div>
                     </form>
                 </div>

@@ -6,13 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  submissions = [1, 2, 3, 4]
+  submissions = [1]
   lat = 51.678418;
   lng = 7.809007;
+  checkedValue: any = 'map';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  radioChecked(event: any){
+    this.checkedValue = event;
   }
 
 }

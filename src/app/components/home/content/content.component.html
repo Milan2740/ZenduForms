@@ -13,7 +13,8 @@
                             <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 filter-col">
                                 <div class="filters position-relative form-group has-search has-search" id="searchBox">
                                     <span class="search-icon form-control-feedback"></span>
-                                    <input class="form-control subSearch" type="search" placeholder="Search..." aria-label="Search...">
+                                    <input class="form-control subSearch" type="search" placeholder="Search..."
+                                        aria-label="Search...">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col">
@@ -45,17 +46,20 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-2 col-xl-2 filter-col text-end">
-                                <div class="filters form-group btn-group btn-group-toggle" data-toggle="buttons">                
+                                <div class="filters form-group btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-primary" [ngClass]="{'active': checkedValue === 'map'}">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked (click)="radioChecked('map')"> Map
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked
+                                            (click)="radioChecked('map')"> Map
                                     </label>
                                     <label class="btn btn-secondary" [ngClass]="{'active': checkedValue === 'list'}">
-                                        <input type="radio" name="options" id="option2" autocomplete="off" (click)="radioChecked('list')"> List
+                                        <input type="radio" name="options" id="option2" autocomplete="off"
+                                            (click)="radioChecked('list')"> List
                                     </label>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-1 col-xl-1 filter-col text-end">
-                                <a href="javascript:void(0)" class="export-link"><img src="assets/images/export.png" alt=""></a>
+                                <a href="javascript:void(0)" class="export-link"><img src="assets/images/export.png"
+                                        alt=""></a>
                             </div>
                         </div>
                     </form>
@@ -65,21 +69,17 @@
                 <div class="row submission-data">
                     <div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4 submission-cols">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-forms" *ngFor="let submission of submissions">
-                                <app-submission></app-submission>        
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 left-forms"
+                                *ngFor="let submission of submissions">
+                                <app-submission></app-submission>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 submission-cols">
                         <div class="map">
                             <agm-map [latitude]="lat" [longitude]="lng">
-                                <agm-overlay [latitude]="lat" [longitude]="lng">
-                                    <div class="locationMark">
-                                        <img class="img1" src="assets/images/location-mark.png" alt="location">
-                                        <img class="img2" src="assets/images/location-mark2.png" alt="location">
-                                    </div>
-                                </agm-overlay>
-                
+                                <agm-marker [latitude]="lat"
+                                    [longitude]="lng" [iconUrl]="'assets/images/location-marker.png'"></agm-marker>
                             </agm-map>
                         </div>
                     </div>
